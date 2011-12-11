@@ -49,7 +49,7 @@ Available Samples
     <td>JRuby 1.8 / 1.9</td><td>Rails 3.0.x(use 3.0.5)</td><td>MongoDB</td><td>available</td><td>Use MongoMapper</td>
   </tr>
   <tr>
-    <td>JRuby 1.8 / 1.9</td><td>Rails 3.0.x(use 3.0.5)</td><td>Redis</td><td>unavailable</td><td>Use DataMapper(with tweeked dm-redis-adapter[1]) </td>
+    <td>JRuby 1.8 / 1.9</td><td>Rails 3.0.x(use 3.0.5)</td><td>Redis</td><td>available</td><td>Use DataMapper(with tweeked dm-redis-adapter[1]) </td>
   </tr>
   <tr>
     <td>JRuby 1.8 / 1.9</td><td>Rails 3.0.x(use 3.0.5)</td><td>MySQL</td><td>available</td><td>Use ActiveRecord-JDBC</td>
