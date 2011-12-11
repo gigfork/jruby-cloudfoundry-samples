@@ -34,7 +34,7 @@ Available Samples
     <td>JRuby 1.8 / 1.9</td><td>Sinatra(Gemfile)</td><td>MySQL</td><td>available</td><td>Use DataMapper(with do_jdbc)</td>
   </tr>
   <tr>
-    <td>JRuby 1.8 / 1.9</td><td>Sinatra(Gemfile)</td><td>PosgreSQL</td><td>available</td><td>Use ActiveRecord-JDBC</td>
+    <td>JRuby 1.8 / 1.9</td><td>Sinatra(Gemfile)</td><td>PosgreSQL</td><td>available</td><td>Use ActiveRecord-JDBC, standalone-migrations</td>
   </tr>
   <tr>
     <td>JRuby 1.8 / 1.9</td><td>Sinatra(Gemfile)</td><td>RabbitMQ</td><td>available</td><td>Use Bunny</td>
