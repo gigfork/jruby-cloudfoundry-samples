@@ -64,5 +64,8 @@ Available Samples
     <td>JRuby 1.8 / 1.9</td><td>Rails 3.0.x(use 3.0.5)</td><td>Neo4j</td><td>unavailable</td><td>Use Neography(?)</td>
   </tr>
 </table>
-  [1]: "About your application’s environment" link not working(just like rails app on cloudfoundry.com).
-  [2]: Current dm-redis-adapter depend on hiredis. so, dm-redis-adapter is unavailable on JRuby and mingw32 Ruby. I tweaked the gem for independent from hiredis.
+
+1. "About your application’s environment" link not working(just like rails app on cloudfoundry.com).
+2. Current dm-redis-adapter depend on hiredis. so, dm-redis-adapter is unavailable on JRuby and mingw32 Ruby. 
+   I tweaked the gem for independent from hiredis.
+
