@@ -1,0 +1,31 @@
+#development:
+#  adapter: jdbcsqlite3
+#  database: db/development.sqlite3
+#  pool: 5
+#  timeout: 5000
+
+# connect postgresql service via caldecott
+development:
+  adapter: jdbcpostgresql
+  hostname: localhost
+  port: 10000
+  database: d2b1ca299574649df9e99a9d9d89e508e
+  username: ued39f312b99f45f09de5413cddf573c2
+  password: p5b9341047f3a49a3b4ab56aca43ad927
+  timeout: 5000
+
+production:
+  adapter: jdbcpostgresql
+  hostname: xxxx
+  port: 5432
+  database: xxxx
+  username: xxxx
+  password: xxxx
+  pool: 5
+
+test: &test
+  adapter: jdbcsqlite3
+  database: db/test.sqlite3
+  pool: 5
+  timeout: 5000
+

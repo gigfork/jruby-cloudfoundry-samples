@@ -1,0 +1,6 @@
+source "http://rubygems.org"
+gem 'jruby-openssl'
+gem 'sinatra'
+gem 'json'
+gem 'activerecord'
+gem 'activerecord-jdbcpostgresql-adapter'
