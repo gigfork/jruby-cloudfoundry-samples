@@ -1,0 +1,19 @@
+defaults: &defaults
+  adapter: redis
+  username: 
+  password:
+  host: localhost
+
+development:
+  <<: *defaults
+
+test:
+  <<: *defaults
+
+#production:
+#  <<: *defaults
+production:
+  adapter: redis
+  host: <%= JSON.parse( ENV['VCAP_SERVICES'] )['redis-2.2'].first['credentials']['hostname'] rescue 'localhost' %>
+  port: <%= JSON.parse( ENV['VCAP_SERVICES'] )['redis-2.2'].first['credentials']['port'] rescue 6379 %>
+  password: <%= JSON.parse( ENV['VCAP_SERVICES'] )['redis-2.2'].first['credentials']['password'] rescue '' %>
