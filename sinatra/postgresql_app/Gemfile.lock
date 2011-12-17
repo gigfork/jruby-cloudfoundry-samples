@@ -45,6 +45,7 @@ PLATFORMS
 DEPENDENCIES
   activerecord
   activerecord-jdbcpostgresql-adapter
+  bundler (~> 1.0.10)
   jruby-openssl
   json
   sinatra
