@@ -15,12 +15,11 @@ development:
   timeout: 5000
 
 production:
-  adapter: jdbcpostgresql
-  hostname: xxxx
-  port: 5432
-  database: xxxx
-  username: xxxx
-  password: xxxx
+  host: <%= JSON.parse( ENV['VCAP_SERVICES'] )['postgresql-8.4'].first['credentials']['hostname'] rescue 'localhost' %>
+  port: <%= JSON.parse( ENV['VCAP_SERVICES'] )['postgresql-8.4'].first['credentials']['port'] rescue 5432 %>
+  database:  <%= JSON.parse( ENV['VCAP_SERVICES'] )['postgresql-8.4'].first['credentials']['name'] rescue 'jruby_sinatra_postgresql_app' %>
+  username: <%= JSON.parse( ENV['VCAP_SERVICES'] )['postgresql-8.4'].first['credentials']['username'] rescue '' %>
+  password: <%= JSON.parse( ENV['VCAP_SERVICES'] )['postgresql-8.4'].first['credentials']['password'] rescue '' %>
   pool: 5
 
 test: &test
