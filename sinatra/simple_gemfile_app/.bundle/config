@@ -1,2 +1,2 @@
 --- 
-BUNDLE_WITHOUT: mingw:test
+BUNDLE_WITHOUT: mingw
