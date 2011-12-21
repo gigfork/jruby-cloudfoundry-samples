@@ -34,7 +34,7 @@ Available Samples
     <td>JRuby 1.8 / 1.9</td><td>Sinatra(Gemfile)</td><td>MySQL</td><td>available</td><td>Use DataMapper(with do_jdbc)</td>
   </tr>
   <tr>
-    <td>JRuby 1.8 / 1.9</td><td>Sinatra(Gemfile)</td><td>PosgreSQL</td><td>available</td><td>Use ActiveRecord-JDBC, standalone-migrations</td>
+    <td>JRuby 1.8 / 1.9</td><td>Sinatra(Gemfile)</td><td>PosgreSQL</td><td>available</td><td>Use ActiveRecord-JDBC, standalone-migrations[1]</td>
   </tr>
   <tr>
     <td>JRuby 1.8 / 1.9</td><td>Sinatra(Gemfile)</td><td>RabbitMQ</td><td>available</td><td>Use Bunny</td>
@@ -43,13 +43,13 @@ Available Samples
     <td>JRuby 1.8 / 1.9</td><td>Sinatra(Gemfile)</td><td>Neo4j</td><td>unavailable</td><td>Use Neography(?)</td>
   </tr>
   <tr>
-    <td>JRuby 1.8 / 1.9</td><td>Rails 3.0.x(use 3.0.5)</td><td>-</td><td>available[1]</td><td></td>
+    <td>JRuby 1.8 / 1.9</td><td>Rails 3.0.x(use 3.0.5)</td><td>-</td><td>available[2]</td><td></td>
   </tr>
   <tr>
     <td>JRuby 1.8 / 1.9</td><td>Rails 3.0.x(use 3.0.5)</td><td>MongoDB</td><td>available</td><td>Use MongoMapper</td>
   </tr>
   <tr>
-    <td>JRuby 1.8 / 1.9</td><td>Rails 3.0.x(use 3.0.5)</td><td>Redis</td><td>available</td><td>Use DataMapper(with tweeked dm-redis-adapter[2]) </td>
+    <td>JRuby 1.8 / 1.9</td><td>Rails 3.0.x(use 3.0.5)</td><td>Redis</td><td>available</td><td>Use DataMapper(with tweeked dm-redis-adapter[3]) </td>
   </tr>
   <tr>
     <td>JRuby 1.8 / 1.9</td><td>Rails 3.0.x(use 3.0.5)</td><td>MySQL</td><td>available</td><td>Use ActiveRecord-JDBC</td>
@@ -65,7 +65,7 @@ Available Samples
   </tr>
 </table>
 
-1. "About your application’s environment" link not working(just like rails app on cloudfoundry.com).
-2. Current dm-redis-adapter depend on hiredis. so, dm-redis-adapter is unavailable on JRuby and mingw32 Ruby. 
+1. Use Caldecott(vmc tunnel) for Database Migration.
+2. "About your application’s environment" link not working(just like rails app on cloudfoundry.com).
+3. Current dm-redis-adapter depend on hiredis. so, dm-redis-adapter is unavailable on JRuby and mingw32 Ruby. 
    I tweaked the gem for independent from hiredis.
-
