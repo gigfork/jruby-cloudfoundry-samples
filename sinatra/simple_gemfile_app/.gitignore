@@ -1,4 +1,4 @@
 tmp
 log
 work
-simple_gemfile_app.war
+*.war
