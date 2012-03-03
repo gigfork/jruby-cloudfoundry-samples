@@ -1,6 +1,7 @@
 require 'rubygems'
-require 'sinatra'
 require 'json'
+require 'sinatra'
+require 'java'
 require 'mongoid'
 
 configure do

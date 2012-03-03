@@ -1,0 +1,17 @@
+---
+applications:
+  .:
+    name: jruby_mongodb_app
+    url: ${name}.${target-base}
+    framework:
+      name: sinatra
+      info:
+        mem: 256M
+        description: Sinatra Application
+        exec: ruby app.rb
+    runtime: jruby19
+    mem: 256M
+    instances: 1
+    services:
+      mongodb1:
+        type: :mongodb
