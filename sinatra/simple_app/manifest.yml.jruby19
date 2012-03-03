@@ -6,7 +6,7 @@ applications:
     framework:
       name: sinatra
       info:
-        mem: 128M
+        mem: 256M
         description: Sinatra Application
         exec: ruby app.rb
     runtime: jruby19
