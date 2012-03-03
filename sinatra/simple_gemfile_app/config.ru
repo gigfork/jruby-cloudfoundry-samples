@@ -9,4 +9,3 @@ set :run, false
 set :environment, :production
 use Rack::ContentLength
 run Sinatra::Application
-
