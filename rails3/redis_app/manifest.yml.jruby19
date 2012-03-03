@@ -1,0 +1,18 @@
+---
+applications:
+  .:
+    name: jruby_rails305_redis_app
+    url: ${name}.${target-base}
+    framework:
+      name: rails3
+      info:
+        mem: 256M
+        description: Rails Application
+        exec:
+    runtime: jruby19
+    mem: 512M
+    instances: 1
+    services:
+      redis1:
+        type: redis
+...

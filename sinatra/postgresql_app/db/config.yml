@@ -9,9 +9,9 @@ development:
   adapter: jdbcpostgresql
   hostname: localhost
   port: 10000
-  database: xxxx
-  username: xxxx
-  password: xxxx
+  database: d0bb04c05943744fea7202a7e3eaa645c
+  username: ub0c9f1389b7c4603bac21dad4696c5b4
+  password: p0856b673c49c4923ac4ff4341043f61c
   timeout: 5000
 
 production:
