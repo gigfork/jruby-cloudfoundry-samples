@@ -1,7 +1,7 @@
 ---
 applications:
   .:
-    name: env
+    name: jruby_simple_gemfile_app
     url: ${name}.${target-base}
     framework:
       name: sinatra
