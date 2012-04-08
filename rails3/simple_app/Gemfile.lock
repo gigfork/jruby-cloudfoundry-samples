@@ -75,5 +75,5 @@ PLATFORMS
 
 DEPENDENCIES
   jruby-openssl
-  json
+  json (~> 1.6.5)
   rails (= 3.0.5)
