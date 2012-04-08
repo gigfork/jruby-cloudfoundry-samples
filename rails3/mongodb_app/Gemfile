@@ -30,6 +30,6 @@ gem 'rails', '3.0.5'
 # end
 
 gem 'jruby-openssl'
-gem 'json'
-gem 'mongo_mapper'
-gem 'bson'
+gem 'json', '~> 1.6.5'
+gem 'mongo_mapper', '~> 0.10.1'
+gem 'bson' ,'~> 1.5.1'
